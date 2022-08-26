@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, etails, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+	margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: inherit;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* key color */
+$kcolor: #ff6400;
+
+/* responsive unit */
+$sm: "768px";
+$md: "1024px";
+$lg: "1200px";
+
+/* font style list */
+@mixin yisunsin() {
+    font-family: 'YiSunShinDotumM';
+}
+
+/* transition */
+@mixin transition($property: all, $duration: .15s, $timing: linear, $delay: 0s) {
+	-webkit-transition-property: $property;
+    transition-property: $property;
+	-webkit-transition-duration: $duration;
+    transition-duration: $duration;
+	-webkit-transition-timing-function: $timing;
+    transition-timing-function: $timing;
+	-webkit-transition-delay: $delay;
+    transition-delay: $delay;
+}
+
+body {
+    min-width: 360px;
+    width: 100%;
+    font-size: 15px;
+    color: #2c2c2c;
+    letter-spacing: .5px;
+    font-weight: 300;
+	@include yisunsin();
+    word-break: keep-all;
+    box-sizing: border-box;
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+
+img {
+    display: block;
+    &.visible-sm {
+        display: block;
+    }
+    &.visible-lg {
+        display: none;
+    }
+    @media(min-width: $md) {
+        &.visible-sm {
+            display: none;
+        }
+        &.visible-lg {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.container-fluid {
+    display: block;
+    width: 100%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+hr {
+	display: block;
+	border: 0;
+	margin: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, select, textarea {
+    font-family: inherit;
+    outline: none !important;
+}
+a, button {
+    color: #000;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    &:hover {
+        color: #000;
+    }
+}
