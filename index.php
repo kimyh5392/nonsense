@@ -18,7 +18,7 @@
             </div>
         </div>
         <!-- introduce -->
-        <article class="introduce effect">
+        <article class="introduce effect" id="about">
             <div class="container">
                 <p>
                     <b>We</b> offer something different.<br class="d-block">
@@ -49,7 +49,7 @@
             </div>
         </article>
         <!-- about -->
-        <section class="about effect">
+        <section class="about effect" id="ci">
             <div class="container">
                 <div class="section-header effect">
                     <h3>About CI</h3>
@@ -91,7 +91,7 @@
             </div>
         </section>
         <!-- work -->
-        <section class="work effect">
+        <section class="work effect" id="work">
             <div class="container">
                 <div class="section-header">
                     <h3>Our Work</h3>
@@ -181,7 +181,7 @@
             </div>
         </section>
         <!-- ceo-info -->
-        <article class="ceo-info effect">
+        <article class="ceo-info effect" id="ceo">
             <div class="container">
                 <div class="v-align">
                     <h3>Beom Dong, Sohn</h3>
@@ -201,7 +201,7 @@
             </div>
         </article>
         <!-- leaders -->
-        <section class="leaders effect">
+        <section class="leaders effect" id="leaders">
             <div class="container">
                 <div class="section-header">
                     <h3>Slate Leaders</h3>

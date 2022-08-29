@@ -106,7 +106,7 @@ a, button {
   position: relative;
   overflow: hidden;
   display: block;
-  height: 350px;
+  height: 100vh;
   background-image: url(/assets/images/main/bg_jumbotron.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,17 +180,15 @@ a, button {
     right: 0;
     opacity: 1; }
   @media (min-width: 1024px) {
-    .jumbotron {
-      height: 950px; }
-      .jumbotron .container {
-        width: 670px;
-        padding-top: 230px; }
-        .jumbotron .container .summary small {
-          font-size: 34px;
-          line-height: 57px; }
-        .jumbotron .container .summary p {
-          font-size: 42px;
-          line-height: 57px; } }
+    .jumbotron .container {
+      width: 670px;
+      padding-top: 230px; }
+      .jumbotron .container .summary small {
+        font-size: 34px;
+        line-height: 57px; }
+      .jumbotron .container .summary p {
+        font-size: 42px;
+        line-height: 57px; } }
 
 /* introduce */
 .introduce {

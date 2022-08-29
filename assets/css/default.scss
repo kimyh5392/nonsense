@@ -105,7 +105,7 @@
     z-index: 99;
     overflow-y: auto;
     text-align: center;
-    @include transition($timing: ease-in-out);
+    @include transition($duration: .4s, $timing: ease-in-out);
     background-color: $kcolor;
     .container {
         position: relative;
@@ -154,6 +154,9 @@
                 padding-top: 125px;
                 > ul {
                     > li {
+                        position: relative;
+                        top: 20px;
+                        opacity: 0;
                         > a {
                             font-size: 18px;
                             color: #fff;
@@ -161,6 +164,27 @@
                         }
                         & ~ li {
                             margin-top: 20px;
+                        }
+                        &:nth-of-type(1) {
+                            @include transition($duration: .4s, $timing: ease-in-out);
+                        }
+                        &:nth-of-type(2) {
+                            @include transition($duration: .4s, $timing: ease-in-out, $delay: .1s);
+                        }
+                        &:nth-of-type(3) {
+                            @include transition($duration: .4s, $timing: ease-in-out, $delay: .2s);
+                        }
+                        &:nth-of-type(4) {
+                            @include transition($duration: .4s, $timing: ease-in-out, $delay: .3s);
+                        }
+                        &:nth-of-type(5) {
+                            @include transition($duration: .4s, $timing: ease-in-out, $delay: .4s);
+                        }
+                        &:nth-of-type(6) {
+                            @include transition($duration: .4s, $timing: ease-in-out, $delay: .5s);
+                        }
+                        &:nth-of-type(7) {
+                            @include transition($duration: .4s, $timing: ease-in-out, $delay: .6s);
                         }
                     }
                 }
@@ -170,6 +194,20 @@
                 color: #fff;
                 font-weight: 400;
                 margin-top: 100px;
+            }
+        }
+    }
+    &.active {
+        .container {
+            .v-align {
+                .nav-content {
+                    > ul {
+                        > li {
+                            top: 0;
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
     }
@@ -184,7 +222,45 @@ body {
     }
     &.scrolled {
         #header {
-            background-color: rgba(#000, .3);
+            background-color: #202020;
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
+            .container {
+                padding: 15px 20px;
+            }
+        }
+    }
+    @media(min-width: $md) {
+        &.scrolled {
+            #header {
+                .container {
+                    position: static;
+                    padding: 25px 0;
+                    .logo {
+                        position: absolute;
+                        top: 50%;
+                        left: 30px;
+                        transform: translateY(-50%);
+                        img {
+                            &.visible-sm {
+                                display: block;
+                            }
+                            &.visible-lg {
+                                display: none;
+                            }
+                        }
+                    }
+                    #gnb {
+                        margin: 0;
+                        > ul {
+                            > li {
+                                > a {
+                                    padding: 5px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
