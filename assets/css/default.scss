@@ -7,6 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
+    @include transition();
     .container {
         position: relative;
         padding: 30px 20px;
@@ -178,6 +179,11 @@ body {
         overflow: hidden;
         #nav {
             top: 0;
+        }
+    }
+    &.scrolled {
+        #header {
+            background-color: rgba(#000, .3);
         }
     }
 }
