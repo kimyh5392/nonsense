@@ -48,12 +48,12 @@
             </div>
             <div class="nav-content">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CI</a></li>
-                    <li><a href="#">OUR WORK</a></li>
-                    <li><a href="#">OUR TEAM</a></li>
-                    <li><a href="#">SLATE LEADERS</a></li>
+                    <li><a href="javascript:;" class="home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#ci">CI</a></li>
+                    <li><a href="#work">OUR WORK</a></li>
+                    <li><a href="#ceo">OUR TEAM</a></li>
+                    <li><a href="#leaders">SLATE LEADERS</a></li>
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
             </div>

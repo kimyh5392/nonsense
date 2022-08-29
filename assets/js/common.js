@@ -20,7 +20,7 @@
     });
     
     // header gnb menu click event
-    var $link = $('#gnb > ul > li > a');
+    var $link = $('#gnb > ul > li > a, .nav-content ul > li > a');
     
     $link.on('click',function(e){
         var target = $($(this).attr('href')); 
@@ -28,11 +28,14 @@
             scrollTop: target.offset().top - 75
         }, 400);
         $(this).parent().addClass('active');
+        $('body').removeClass('opened');
         e.preventDefault();
     });
+    
     $(document).on('click', '.home', function(){
         $('html, body').animate({
             scrollTop: 0
         }, 400);
+        $('body').removeClass('opened');
     });
 })(jQuery);
