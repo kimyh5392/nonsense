@@ -102,6 +102,7 @@
     width: 100%;
     min-height: 600px;
     height: 100vh;
+    z-index: 99;
     overflow-y: auto;
     text-align: center;
     @include transition($timing: ease-in-out);
