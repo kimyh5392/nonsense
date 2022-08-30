@@ -77,9 +77,21 @@
                                 @include transition();
                             }
                             &:hover {
+                                opacity: .7;
                                 color: $kcolor;
                                 &:after {
                                     width: 100%;
+                                }
+                            }
+                        }
+                        &.active {
+                            > a {
+                                color: $kcolor;
+                                &:after {
+                                    width: 100%;
+                                }
+                                &:hover {
+                                    opacity: 1;
                                 }
                             }
                         }

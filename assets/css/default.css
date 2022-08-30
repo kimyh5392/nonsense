@@ -191,9 +191,16 @@ a, button {
                   -webkit-transition-delay: 0s;
                   transition-delay: 0s; }
                 #header .container #gnb > ul > li > a:hover {
+                  opacity: .7;
                   color: #ff6400; }
                   #header .container #gnb > ul > li > a:hover:after {
                     width: 100%; }
+              #header .container #gnb > ul > li.active > a {
+                color: #ff6400; }
+                #header .container #gnb > ul > li.active > a:after {
+                  width: 100%; }
+                #header .container #gnb > ul > li.active > a:hover {
+                  opacity: 1; }
         #header .container .btn-area {
           display: none; } }
 
