@@ -31,11 +31,4 @@
         $('body').removeClass('opened');
         e.preventDefault();
     });
-    
-    $(document).on('click', '.home', function(){
-        $('html, body').animate({
-            scrollTop: 0
-        }, 400);
-        $('body').removeClass('opened');
-    });
 })(jQuery);

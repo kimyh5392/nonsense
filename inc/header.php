@@ -9,7 +9,7 @@
         </h1>
         <nav id="gnb">
             <ul>
-                <li><a href="javascript:;" class="home">HOME</a></li>
+                <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#ci">CI</a></li>
                 <li><a href="#work">OUR WORK</a></li>
@@ -48,7 +48,7 @@
             </div>
             <div class="nav-content">
                 <ul>
-                    <li><a href="javascript:;" class="home">HOME</a></li>
+                    <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#ci">CI</a></li>
                     <li><a href="#work">OUR WORK</a></li>
